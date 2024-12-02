@@ -1,0 +1,399 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+/* Sidebar */
+.sidebar {
+    width: 20%;
+    background-color: #D5C58A;
+    padding: 30px 20px;
+    text-align: center;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.sidebar img {
+    width: 80%;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    margin-bottom: 20px;
+}
+.sidebar nav a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    padding: 10px 0;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.sidebar nav a:hover {
+    color: #555;
+}
+
+
+/* Contact */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.social-links a {
+    text-decoration: none;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.social-links a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+.social-links img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Main Content for about & experience*/
+.main-content {
+    width: 80%;
+    padding: 40px;
+    background-color: #fff;
+    background: url('Wallpaper Content.jpg');
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* About */
+.about-me {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    background: #D5C58A;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.about-me h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+.about-me p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 20px;
+}
+.about-me .info {
+    margin-bottom: 10px;
+}
+.about-me .info strong {
+    font-weight: bold;
+    color: #333;
+}
+.about-me .highlight {
+    background-color: #f4c842;
+    color: #333;
+    padding: 3px 6px;
+    border-radius: 5px;
+}
+
+
+/* Lists */
+ol {
+    background: #E0DAA4;
+    padding: 20px;
+}
+ul {
+    background: #E0DAA4;
+    padding: 20px;
+}
+ol li {
+    padding: 5px;
+    list-style-position: inside;
+}
+ul li {
+    margin: 5px;
+    list-style-position: inside;
+}
+ul.b {
+    list-style-type: circle;
+}
+ol.c {
+    list-style-type: upper-roman;
+}
+
+
+/* Experience */
+.experience-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #444;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #D5C58A;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+/* Card Grid for experience */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+.card {
+    background-color: #D5C58A;
+    border: 10px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.card-title {
+    font-size: 1em;
+    padding: 10px;
+    color: #333;
+}
+
+
+/* main content for education */
+.main-content1 {
+    width: 80%;
+    padding: 40px;
+    background-color: #fff;
+    background: url('Wallpaper Content.jpg');
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Education */
+.education {
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #D5C58A;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.education h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+.education h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.education p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+.education img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Timeline */
+.timeline {
+    list-style-type: none;
+    margin: 20px 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 20px;
+}
+.timeline span {
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: bold;
+}
+.timeline p {
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+    margin-top: 5px;
+}
+
+
+/* Next & Prev */
+.align-right {
+    display: block; 
+    text-align: right;
+    margin-top: 20px; 
+    font-weight: bold; 
+    color: #333; 
+    text-decoration: none; 
+}
+.align-right:hover {
+    color: #555;
+}
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.nav-links a {
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+.nav-links a:hover {
+    color: #555;
+}
+
+
+/* Family */
+.family-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #444;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #D5C58A;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 95%;
+}
+
+
+/* Main Content for family */
+.main-content2 {
+    width: 80%;
+    padding: 40px;
+    background-color: #fff;
+    background: url('Wallpaper Content.jpg');
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.family-member {
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #D5C58A;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.family-member img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.family-member h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+.family-member p {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.family-member strong {
+    font-weight: bold;
+}
+
+
+/* Main content for achievement */
+.main-content3 {
+    width: 80%;
+    padding: 40px;
+    background-color: #fff;
+    background: url('Wallpaper Content.jpg');
+    position: relative;
+}
+.achievement {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #444;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #D5C58A;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 100%;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border: 3px solid;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+th, td {
+    border: 2px solid;
+    padding: 8px;
+    text-align: center;
+    background-color: #D5C58A;
+}
+td img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px;
+}
